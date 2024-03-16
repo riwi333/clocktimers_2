@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "module": "ES6",
+        "moduleResolution": "bundler",
+        "target": "ES6",
+        "jsx": "react",
+        "allowJs": true,
+        "strict": true,
+    },
+    "include": [ "src/**/*" ]
+}
