@@ -1,5 +1,5 @@
 const path = require('path');
-
+ 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -22,10 +22,10 @@ module.exports = {
                 test: /\.css$/i,
                 use: [ 'style-loader', 'css-loader' ],
             },
-			// {
-			// 	test: /\.(ttf|svg)$/i,
-			// 	type: 'asset/resource',
-			// },
+			{
+				test: /\.(svg)$/i,
+				type: 'asset/resource',
+			},
         ]
     },
     resolve: {
@@ -34,7 +34,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: "index.html",
-			favicon: "",
+			favicon: 
+				path.resolve(__dirname, "assets/bootstrap-icons", "clock.svg"),
         }),
     ],
 	// devtool: 'eval-source-map',

@@ -8,5 +8,5 @@
         "allowJs": true,
         "strict": true,
     },
-    "include": [ "src/**/*" ]
+    "include": [ "src/**/*", "assets.d.ts" ]
 }
